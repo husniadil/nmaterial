@@ -1,0 +1,7 @@
+node_modules/
+babel.config.js
+next.config.js
+next-env-d.ts
+webpack.config.js
+.next/
+**/*.test.{js,jsx,ts,tsx}
