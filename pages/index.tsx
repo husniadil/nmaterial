@@ -1,9 +1,16 @@
+import Button from '@material-ui/core/Button'
+import Tooltip from '@material-ui/core/Tooltip'
+import MoonIcon from '@material-ui/icons/Brightness2Outlined'
+import SunIcon from '@material-ui/icons/WbSunnyOutlined'
 import Head from 'next/head'
-import React, { ReactElement } from 'react'
+import React from 'react'
 
+import { ToggleThemeContext } from '../src/theme'
 import styles from '../styles/Home.module.css'
 
-const Home = (): ReactElement => {
+const Home = (): React.ReactElement => {
+  const { toggleTheme, isDark } = React.useContext(ToggleThemeContext)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -14,6 +21,11 @@ const Home = (): ReactElement => {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <Tooltip title="Toggle Theme">
+            <Button variant="text" color="inherit" onClick={toggleTheme}>
+              {isDark ? <SunIcon /> : <MoonIcon />}
+            </Button>
+          </Tooltip>
         </h1>
 
         <p className={styles.description}>
@@ -52,7 +64,7 @@ const Home = (): ReactElement => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          Powered by <img src="/vercel.svg" alt="Vercel Logo" className={isDark ? styles.logoDark : styles.logo} />
         </a>
       </footer>
     </div>
