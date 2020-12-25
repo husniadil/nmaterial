@@ -14,7 +14,7 @@ Save your time by using this ready-to-use boilerplate. Featuring:
   - [patch-package](https://github.com/ds300/patch-package)
 - Dark/light theme support
 - PWA support
-- App container with drawer
+- Prebuilt opinionated app container with drawer
 
 ## Getting Started
 
