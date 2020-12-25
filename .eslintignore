@@ -5,3 +5,5 @@ next-env-d.ts
 webpack.config.js
 .next/
 **/*.test.{js,jsx,ts,tsx}
+public/sw.js
+public/workbox-*.js

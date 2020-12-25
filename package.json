@@ -1,5 +1,8 @@
 {
   "name": "next-material-ui-boilerplate",
+  "author": "Husni Adil Makmur",
+  "description": "A ready-to-use Next.js + Material UI boilerplate.",
+  "license": "MIT",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +19,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.2",
     "next": "10.0.4",
+    "next-pwa": "^5.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"

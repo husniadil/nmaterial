@@ -1,12 +1,8 @@
 import { CssBaseline, MuiThemeProvider } from '@material-ui/core'
 import { Theme } from '@material-ui/core'
-import React, { useCallback, useEffect, useState } from 'react'
+import React from 'react'
 
 import { dark, light } from './theme'
-
-interface ThemeProviderProps {
-  children: React.ReactNode
-}
 
 export const ToggleThemeContext = React.createContext({
   toggleTheme: () => {
@@ -20,20 +16,20 @@ type SelectedTheme = {
   appliedTheme: Theme
 }
 
-export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }: ThemeProviderProps) => {
-  const [selectedTheme, setSelectedTheme] = useState<SelectedTheme>({
+export const ThemeProvider: React.FC = ({ children }) => {
+  const [selectedTheme, setSelectedTheme] = React.useState<SelectedTheme>({
     appliedTheme: dark,
     themeName: 'dark',
   })
 
-  useEffect(() => {
+  React.useEffect(() => {
     const theme = localStorage.getItem('theme')
     if (theme && theme === 'light') {
       setSelectedTheme({ appliedTheme: light, themeName: 'light' })
     }
   }, [])
 
-  const toggleTheme = useCallback(() => {
+  const toggleTheme = React.useCallback(() => {
     if (!selectedTheme || selectedTheme.themeName === 'dark') {
       setSelectedTheme({ appliedTheme: light, themeName: 'light' })
       localStorage.setItem('theme', 'light')
