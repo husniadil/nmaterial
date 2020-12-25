@@ -1,22 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# nmaterial
+
+Save your time by using this ready-to-use boilerplate. Featuring:
+
+- [Next.js](https://nextjs.org)
+- [Material UI](https://material-ui.com)
+- [TypeScript](https://www.typescriptlang.org/)
+- Preconfigured support tools:
+  - [ESLint](https://eslint.org/)
+  - [Prettier](https://prettier.io/)
+  - [husky](https://github.com/typicode/husky)
+  - [lint-staged](https://github.com/okonet/lint-staged)
+  - [EditorConfig](https://editorconfig.org/)
+  - [patch-package](https://github.com/ds300/patch-package)
+- Dark/light theme support
+- PWA support
+- App container with drawer
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+git clone https://github.com/husniadil/nmaterial
+cd nmaterial
+
+# then
+
+npm install
+# or
+yarn
+
+# then
+
 npm run dev
 # or
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -25,10 +44,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To learn more about Material UI, take a look at the following resources:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Material UI Guides](https://material-ui.com/guides/api/) - learn API design approach and best practices.
+- [Component](https://material-ui.com/components/box/) - learn using component by example.
