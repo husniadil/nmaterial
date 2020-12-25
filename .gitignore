@@ -37,3 +37,4 @@ yarn-error.log*
 # pwa
 public/sw.js
 public/workbox-*.js
+public/asset-manifest.json
