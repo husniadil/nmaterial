@@ -1,12 +1,12 @@
 {
-  "name": "NMUIB",
-  "short_name": "NMUIB",
+  "name": "NMaterial",
+  "short_name": "NMaterial",
   "theme_color": "#15202b",
   "background_color": "#15202b",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "start_url": "/",
+  "start_url": ".",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",

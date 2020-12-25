@@ -43,8 +43,13 @@ const options = (dark: boolean): ThemeOptions => {
       background: paletteColors.background,
     },
     typography: {
-      fontFamily:
-        '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+      fontFamily: 'Lato, Helvetica, Arial, sans-serif',
+      body1: {
+        fontFamily: 'Open Sans, Helvetica, Arial, sans-serif',
+      },
+      body2: {
+        fontFamily: 'Open Sans, Helvetica, Arial, sans-serif',
+      },
     },
     overrides: {
       MuiCssBaseline: {

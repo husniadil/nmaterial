@@ -45,7 +45,11 @@ export class MyDocument extends Document {
           <meta property="og:image" content={APP_BASE_URL + '/icons/apple-touch-icon.png'} />
           <meta property="og:locale" content="en_US" />
 
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap" />
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,700&display=swap"
+          />
         </Head>
         <body>
           <Main />

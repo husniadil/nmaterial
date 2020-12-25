@@ -1,5 +1,5 @@
 {
-  "name": "next-material-ui-boilerplate",
+  "name": "nmaterial",
   "author": "Husni Adil Makmur",
   "description": "A ready-to-use Next.js + Material UI boilerplate.",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "@material-ui/styles": "^4.11.2",
     "next": "10.0.4",
     "next-pwa": "^5.0.0",
+    "nextjs-progressbar": "^0.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "styled-components": "^5.2.1"

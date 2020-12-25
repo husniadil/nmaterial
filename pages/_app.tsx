@@ -1,8 +1,10 @@
 import CssBaseline from '@material-ui/core/CssBaseline'
 import { AppProps } from 'next/dist/next-server/lib/router/router'
 import Head from 'next/head'
+import NextNprogress from 'nextjs-progressbar'
 import React from 'react'
 
+import AppContainer from '../src/container/AppContainer'
 import { ThemeProvider } from '../src/theme'
 
 export const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
@@ -19,9 +21,12 @@ export const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <Head>
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=0" />
       </Head>
+      <NextNprogress color="#29D" startPosition={0.3} stopDelayMs={200} height={1} />
       <ThemeProvider>
         <CssBaseline />
-        <Component {...pageProps} />
+        <AppContainer>
+          <Component {...pageProps} />
+        </AppContainer>
       </ThemeProvider>
     </React.Fragment>
   )
