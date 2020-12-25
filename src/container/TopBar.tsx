@@ -1,18 +1,13 @@
 import AppBar from '@material-ui/core/AppBar'
-import Button from '@material-ui/core/Button'
 import IconButton from '@material-ui/core/IconButton'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import Toolbar from '@material-ui/core/Toolbar'
-import Tooltip from '@material-ui/core/Tooltip'
 import Typography from '@material-ui/core/Typography'
-import MoonIcon from '@material-ui/icons/Brightness2Outlined'
 import MenuIcon from '@material-ui/icons/Menu'
 import BackIcon from '@material-ui/icons/NavigateBefore'
-import SunIcon from '@material-ui/icons/WbSunnyOutlined'
 import { useRouter } from 'next/router'
 import React from 'react'
 
-import { ToggleThemeContext } from '../theme'
 import { DrawerWidth, ToggleDrawerContext } from './AppDrawer'
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -29,11 +24,6 @@ const useStyles = makeStyles((theme: Theme) =>
         display: 'none',
       },
     },
-    toolbarRight: {
-      right: 0,
-      position: 'absolute',
-      paddingRight: '1%',
-    },
   })
 )
 
@@ -44,7 +34,6 @@ interface TopBarProps {
 
 export const TopBar: React.FC<TopBarProps> = ({ title, actionHamburger }) => {
   const { toggleDrawer } = React.useContext(ToggleDrawerContext)
-  const { toggleTheme, isDark } = React.useContext(ToggleThemeContext)
   const router = useRouter()
   const classes = useStyles()
 
@@ -71,13 +60,6 @@ export const TopBar: React.FC<TopBarProps> = ({ title, actionHamburger }) => {
         <Typography variant="h6" noWrap>
           {title}
         </Typography>
-        <div className={classes.toolbarRight}>
-          <Tooltip title="Toggle Theme">
-            <Button variant="text" color="inherit" onClick={toggleTheme}>
-              {isDark ? <SunIcon /> : <MoonIcon />}
-            </Button>
-          </Tooltip>
-        </div>
       </Toolbar>
     </AppBar>
   )

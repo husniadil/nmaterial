@@ -114,9 +114,9 @@ export const HomeJSS: React.FC = () => {
     <>
       <div className={classes.container}>
         <main className={classes.main}>
-          <h1 className={classes.title}>
+          <h2 className={classes.title}>
             Welcome to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
+          </h2>
 
           <p className={classes.description}>
             Get started by editing <code className={classes.code}>pages/index.js</code>
