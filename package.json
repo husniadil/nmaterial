@@ -2,6 +2,7 @@
   "name": "nmaterial",
   "author": "Husni Adil Makmur",
   "description": "A ready-to-use Next.js + Material UI boilerplate.",
+  "homepage": "https://github.com/husniadil/nmaterial",
   "license": "MIT",
   "version": "0.1.0",
   "private": true,

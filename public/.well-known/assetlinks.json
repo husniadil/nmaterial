@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.stringjet.nmaterial.twa",
+      "sha256_cert_fingerprints": [
+        "0C:C2:54:6E:B1:03:AB:D6:8E:8D:C7:08:71:BE:6B:31:EF:02:88:B5:C6:EC:E5:98:97:80:0C:C2:7D:E6:D7:E1"
+      ]
+    }
+  }
+]
