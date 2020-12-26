@@ -44,8 +44,28 @@ export class MyDocument extends Document {
           <meta property="og:url" content={APP_BASE_URL} />
           <meta property="og:image" content={APP_BASE_URL + '/icons/apple-touch-icon.png'} />
           <meta property="og:locale" content="en_US" />
-          <link href="/fonts/lato.css" rel="stylesheet" />
-          <link href="/fonts/opensans.css" rel="stylesheet" />
+          <link
+            rel="stylesheet preload prefetch"
+            href="/fonts/lato.css"
+            as="style"
+            onLoad={(e) => {
+              e.currentTarget.onload = null
+              e.currentTarget.rel = 'stylesheet'
+            }}
+          />
+          <link
+            rel="stylesheet preload prefetch"
+            href="/fonts/opensans.css"
+            as="style"
+            onLoad={(e) => {
+              e.currentTarget.onload = null
+              e.currentTarget.rel = 'stylesheet'
+            }}
+          />
+          <noscript>
+            <link rel="stylesheet" href="/fonts/lato.css" />
+            <link rel="stylesheet" href="/fonts/opensans.css" />
+          </noscript>
         </Head>
         <body>
           <Main />
