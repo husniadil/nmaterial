@@ -13,7 +13,7 @@ Save your time by using this ready-to-use boilerplate. Featuring:
   - [EditorConfig](https://editorconfig.org/)
   - [patch-package](https://github.com/ds300/patch-package)
 - Dark/light theme support
-- PWA support
+- PWA ready
 - Prebuilt opinionated app container with drawer
 
 ## Getting Started
@@ -48,3 +48,9 @@ To learn more about Material UI, take a look at the following resources:
 
 - [Material UI Guides](https://material-ui.com/guides/api/) - learn API design approach and best practices.
 - [Component](https://material-ui.com/components/box/) - learn using component by example.
+
+## Cool apps to power your PWA app
+
+- [PWABuilder](https://www.pwabuilder.com) - creates Android, Microsoft, and Samsung apps from PWA site.
+- [Favicon Generator](https://realfavicongenerator.net) - generate icons in various dimensions.
+- [Maskable.app Editor](https://maskable.app/editor) - creates maskable icon.
