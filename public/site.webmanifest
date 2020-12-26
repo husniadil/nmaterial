@@ -20,5 +20,18 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "url": "https://nmaterial.husniadil.vercel.app/",
+  "screenshots": [
+    {
+      "src": "[Embedded]",
+      "sizes": "1280x800",
+      "type": "image/png"
+    },
+    {
+      "src": "[Embedded]",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
   ]
 }
