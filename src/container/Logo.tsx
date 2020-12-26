@@ -31,7 +31,7 @@ const Logo: React.FC = () => {
         <ListItem>
           <ListItemIcon>
             <img
-              src="/icons/apple-touch-icon.png"
+              src="/icons/favicon-32x32.png"
               width="25px"
               height="25px"
               alt={APP_NAME}
@@ -41,7 +41,7 @@ const Logo: React.FC = () => {
           <ListItemText primary={<h1 className={classes.brand}>{APP_NAME}</h1>} />
           <ListItemIcon>
             <Tooltip title="Toggle Theme">
-              <Button variant="text" color="inherit" onClick={toggleTheme}>
+              <Button style={{ height: 25 }} variant="text" color="inherit" onClick={toggleTheme}>
                 {isDark ? <SunIcon /> : <MoonIcon />}
               </Button>
             </Tooltip>
