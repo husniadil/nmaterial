@@ -19,7 +19,6 @@
 .DS_Store
 *.pem
 .eslintcache
-.android
 
 # debug
 npm-debug.log*
@@ -39,3 +38,6 @@ yarn-error.log*
 public/sw.js
 public/workbox-*.js
 public/asset-manifest.json
+.android
+.microsoft
+.samsung
